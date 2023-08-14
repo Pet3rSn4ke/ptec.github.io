@@ -1,0 +1,137 @@
+/*Fuentes Lato, Poppins y Ubuntu Condensed*/
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Ubuntu+Condensed&display=swap");
+:root {
+  /*Variables*/
+  --colorMainPurple: #122296;
+  --colorHoverPurple: #051ee3;
+  --colorCoderGreen: #69e31b;
+  --colorWhite: #ffffff;
+  --fontTitleH1: "Lato", sans-serif;
+  --sizeTitleH1: 2.25rem;
+  --fontParagraph: "Poppins", sans-serif;
+  --sizeParagraph: 0.875rem;
+  --fontButton: "Ubuntu Condensed", sans-serif;
+  --sizeButton: 0.75rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  scroll-behavior: smooth;
+}
+p {
+  font-family: var(--fontParagraph);
+}
+a {
+  width: 0;
+  height: 0;
+}
+h1 {
+  font-family: var(--fontTitleH1);
+  font-weight: bolder;
+  font-size: 36px;
+}
+span {
+  font-family: var(--fontParagraph);
+}
+.headerBar {
+  /*Cabecera de página*/
+  position: fixed;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  height: 6rem;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--colorMainPurple);
+  border-bottom: 4px solid var(--colorCoderGreen);
+}
+.headerLogo {
+  background-color: transparent;
+  height: 7vh;
+}
+.buttonsNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.125rem;
+  padding: 0 0 0 0;
+}
+.button {
+  background-color: transparent;
+  color: var(--colorCoderGreen);
+  padding: 1rem 1rem 1rem 1rem;
+  text-decoration: none;
+  text-align: center;
+  border: 3px solid var(--colorCoderGreen);
+  font-family: var(--fontButton);
+  border-radius: 8px;
+  width: fit-content;
+  height: fit-content;
+}
+.buttonCTA {
+  white-space: nowrap;
+  display: block;
+  color: var(--colorMainPurple);
+  background-color: var(--colorCoderGreen);
+  padding: 1rem 1rem 1rem 1rem;
+  text-decoration: none;
+  text-align: center;
+
+  border: 3px solid var(--colorCoderGreen);
+  font-family: var(--fontButton);
+  border-radius: 8px;
+  width: fit-content;
+  height: fit-content;
+}
+section {
+  height: 90vh;
+  width: 100%;
+  box-shadow: inset 0px -60px 60px 10px rgba(0, 0, 0, 0.25);
+}
+#blankSection {
+  height: 6rem;
+  background-color: var(--colorMainPurple);
+}
+.heroSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 10vh 10vw 10vh 10vw;
+  background-color: var(--colorMainPurple);
+  color: var(--colorWhite);
+}
+#heroText {
+  border: 1px dotted #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 40rem;
+}
+#heroImage {
+  width: 20rem;
+  height: 20rem;
+  border: 5px solid #ffffff;
+  border-radius: 100%;
+  box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.75);
+}
+.expSection {
+  background-color: var(--colorWhite);
+  color: var(--colorWhite);
+}
+.studSection {
+  background-color: var(--colorMainPurple);
+}
+.contSection {
+  background-color: var(--colorWhite);
+}
+footer {
+  background-color: var(--colorMainPurple);
+}
