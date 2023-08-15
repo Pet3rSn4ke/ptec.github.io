@@ -1,3 +1,15 @@
+/*
+---------------------------------------------------
+Cositas aun pendientes por arreglar:
+- Contenido de las secciones Experience, Studies, Contact y Footer.
+- Tamaños de todo porque los pusiste en rem y no era así xdxdxd.
+- Unos grounds bien chéveres para las otras secciones (no olvides atribuir
+a los creadores de las imágenes).
+- Mejorar ese cv pana.
+- Añadir musiquita mamalona de hacker a la página B)
+
+---------------------------------------------------
+*/
 /*Fuentes Lato, Poppins y Ubuntu Condensed*/
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Ubuntu+Condensed&display=swap");
 :root {
@@ -8,7 +20,7 @@
   --colorWhite: #ffffff;
   --fontTitleH1: "Lato", sans-serif;
   --sizeTitleH1: 2.25rem;
-  --fontParagraph: "Poppins", sans-serif;
+ --fontParagraph: "Poppins", sans-serif;
   --sizeParagraph: 0.875rem;
   --fontButton: "Ubuntu Condensed", sans-serif;
   --sizeButton: 0.75rem;
@@ -18,7 +30,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container {
+html {
   scroll-behavior: smooth;
 }
 p {
@@ -99,6 +111,12 @@ section {
   background-color: var(--colorMainPurple);
 }
 .heroSection {
+  background-image: url('./media/electronics.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: row;
   justify-content: center;
