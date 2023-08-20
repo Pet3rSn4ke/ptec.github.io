@@ -1,5 +1,5 @@
 /*
----------------------------------------------------
+
 Cositas aun pendientes por arreglar:
 - Contenido de las secciones Experience, Studies, Contact y Footer.
 - Tamaños de todo porque los pusiste en rem y no era así xdxdxd.
@@ -8,10 +8,13 @@ a los creadores de las imágenes).
 - Mejorar ese cv pana.
 - Añadir musiquita mamalona de hacker a la página B)
 
----------------------------------------------------
 */
-/*Fuentes Lato, Poppins y Ubuntu Condensed*/
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Ubuntu+Condensed&display=swap");
+/*
+
+Fuentes Lato, Poppins y Ubuntu Condensed
+
+*/
 :root {
   font-size: 16px;
   /*Variables*/
@@ -24,9 +27,15 @@ a los creadores de las imágenes).
   --fontParagraph: "Poppins", sans-serif;
   --fontButton: "Ubuntu Condensed", sans-serif;
   --sizeTitleH1: 2.25rem;
+  --sizeTitleH2: 1.85rem;
   --sizeParagraph: 0.875rem;
   --sizeButton: 0.75rem;
 }
+/*
+
+Estilos Globales
+
+*/
 * {
   caret-color: transparent;
   margin: 0;
@@ -46,6 +55,14 @@ h1 {
   font-family: var(--fontTitleH1);
   font-weight: 900;
   font-size: var(--sizeTitleH1);
+}
+h2 {
+  font-family: var(--fontTitleH1);
+  font-weight: 900;
+  font-size: var(--sizeTitleH2);
+}
+.mainSecTitles{
+  color: var(--colorCoderGreen);
 }
 .headerBar {
   /*Cabecera de página*/
@@ -67,6 +84,7 @@ h1 {
   height: 8vh;
 }
 .buttonsNav {
+  list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -136,8 +154,22 @@ section {
   box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.75);
 }
 .expSection {
+  padding:5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   background-color: var(--colorWhite);
-  color: var(--colorWhite);
+  color: var(--colorMainPurple);
+  list-style: circle;
+
+
+
+}
+.expList{
+  display: flex;
+  flex-direction: row;
+justify-content: center;
 }
 .studSection {
   background-color: var(--colorMainPurple);
